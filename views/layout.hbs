@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark shadow-sm">
+        <a class="navbar-brand" href="#">{{title}}</a>
+    </nav>
+    <div class="main container">
+        {{#if message.length}}
+        <div class="alert alert-info">
+            {{message}}
+        </div>
+        {{/if}}
+        {{{body}}}
+    </div>
+</body>
+
+</html>
